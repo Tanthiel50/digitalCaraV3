@@ -23,28 +23,28 @@ import { FreeMode, Pagination } from "swiper";
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: "Marketing",
+    description: `Analyser les besoins consommateurs et les moyens d'action pour influencer leur comportement.`,
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: "Communication",
+    description: "Ensemble des moyens et techniques permettant la diffusion des messages pour contribuer à l'atteinte de ces objectifs.",
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: "Développement web",
+    description: "Ensemble du processus de création de sites internet ou d'applications en utilisant la technologie web appropriée.",
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: "Stratégie commerciale",
+    description: "Définition et mise en oeuvre des moyens marketing et commerciaux coordonnés afin d'atteindre les objectifs.",
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: "UI/UX design",
+    description: "Etude des attentes et besoins de l'utilisateur pour la création d'un site web et/ou d'une application mobile.",
   },
 ];
 
@@ -71,11 +71,11 @@ const ServiceSlider = () => {
       serviceData.map((item,index)=>{
         return ( 
         <SwiperSlide key={index}>
-          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+          <div className="bg-[rgba(65,47,123,0.15)] md:min-h-[270px] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
             {/* icon */}
             <div className="text-4xl text-blue mb-4">{item.icon}</div>
             {/* title & desc */}
-            <div className="mb-8 ">
+            <div className="">
               <div className="mb-2 text-lg">{item.title}</div>
               <p className="max-w-[350px] leading-normal">{item.description}</p>
             </div>
