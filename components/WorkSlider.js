@@ -54,13 +54,13 @@ const workSlides = {
           description:
             "Projet e-commerce pour un créateur de bijoux sur mesure. Le défi était de pouvoir réaliser une expérience complete de personnalisation où le client était en mesure de choisir la base de son bijou, la taille de son choix en prenant en compte 11 types de tailles différentes et plusieurs matériaux. Le prix final devait s'ajuster selon le choix du client et le tunnel d'achat devait être géré par Stripe.",
           tech: [
-            <FaReact />,
-            <FaLaravel />,
-            <FaTrello />,
-            <SiPhp />,
-            <SiTailwindcss />,
-            <SiMysql />,
-            <SiPhpmyadmin />,
+            <FaReact key={"react"} />,
+            <FaLaravel key={"laravel"} />,
+            <FaTrello key={"trello"} />,
+            <SiPhp key={"php"} />,
+            <SiTailwindcss key={"tailwindcss"} />,
+            <SiMysql key={"mysql"} />,
+            <SiPhpmyadmin key={"phpmyadmin"} />,
           ],
         },
         {
@@ -69,14 +69,14 @@ const workSlides = {
           description:
             "Projet de site vitrine où il fallait être en mesure de rendre le contenu dynamique, d'où l'utilisation de threeJs pour le background et le logo, les rendant ainsi réactifs à la navigation. L'utilisation d'un back end était pour permettre la mise en ligne d'article de blog.",
           tech: [
-            <FaReact />,
-            <FaLaravel />,
-            <FaTrello />,
-            <SiPhp />,
-            <SiMui />,
-            <SiMysql />,
-            <SiPhpmyadmin />,
-            <SiThreedotjs />,
+            <FaReact key={"react"} />,
+            <FaLaravel key={"laravel"} />,
+            <FaTrello key={"trello"} />,
+            <SiPhp key={"php"} />,
+            <SiMui key={"mui"} />,
+            <SiMysql key={"mysql"} />,
+            <SiPhpmyadmin key={"phpmyadmin"} />,
+            <SiThreedotjs key={"threedotjs"} />,
           ],
         },
         {
@@ -84,7 +84,7 @@ const workSlides = {
           path: "/weather.jpg",
           description:
             "Projet personnel de création d'application météo afin d'apprendre à utiliser React et réaliser des appels API pour afficher les informations meteo.",
-          tech: [<TbBrandReactNative />],
+          tech: [<TbBrandReactNative key={"reactnative"} />],
         },
         {
           title: "Laurentius",
@@ -92,9 +92,9 @@ const workSlides = {
           description:
             "Demande de réalisation d'un site portfolio. J'avais carte blanche et par conséquent, j'ai tenté de réaliser le site sans l'aide d'aucun framework. Le site est donc en Vanilla JS.",
           tech: [
-            <FaHtml5 />,
-            <FaCss3 />,
-            <FaJs />,
+            <FaHtml5 key={"html5"} />,
+            <FaCss3 key={"css3"} />,
+            <FaJs key={"js"} />,
           ],
         },
       ],

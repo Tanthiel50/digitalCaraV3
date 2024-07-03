@@ -38,7 +38,9 @@ const Services = () => {
               className="mb4
             max-w-[400px] mx-auto lg:mx-0"
             >
-              Des compétences qui couvrent de nombreux domaines et sujets mais qui savent s'harmoniser pour réaliser des projets toujours plus grands, innovants et surtout plus performants.{" "}
+              Des compétences qui couvrent de nombreux domaines et sujets mais
+              qui savent s&apos;harmoniser pour réaliser des projets toujours
+              plus grands, innovants et surtout plus performants.{" "}
             </motion.p>
           </div>
           {/* slider */}

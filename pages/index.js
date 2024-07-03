@@ -37,7 +37,15 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Spécialisée dans le développement web, la conception créative et l'accompagnement marketing, je suis en mesure de combiner innovation et performance pour créer des projets uniques. En me basant sur des indicateurs claires et réalistes, je suis en mesure de réaliser des solutions avancées correspondants aux besoins et permettant des résultats efficaces. Une expertise technique, un regard moderne, une créativité innovante me permettent de réaliser des projets numériques de qualités qui feront la différence dans des secteurs très concurrentiels.
+            Spécialisée dans le développement web, la conception créative et
+            l&apos;accompagnement marketing, je suis en mesure de combiner
+            innovation et performance pour créer des projets uniques. En me
+            basant sur des indicateurs claires et réalistes, je suis en mesure
+            de réaliser des solutions avancées correspondants aux besoins et
+            permettant des résultats efficaces. Une expertise technique, un
+            regard moderne, une créativité innovante me permettent de réaliser
+            des projets numériques de qualités qui feront la différence dans des
+            secteurs très concurrentiels.
           </motion.p>
           {/*button*/}
           <div className="flex justify-center xl:hidden relative">

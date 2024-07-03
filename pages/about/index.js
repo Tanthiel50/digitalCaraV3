@@ -47,52 +47,62 @@ const aboutData = [
       {
         title: "Front End",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiTailwindcss />,
-          <SiSass />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiTailwindcss key="tailwindcss" />,
+          <SiSass key="sass" />,
         ],
       },
       {
         title: "Back End",
         icons: [
-          <SiPhp />,
-          <SiLaravel />,
-          <SiSymfony />,
-          <SiMysql />,
-          <SiPhpmyadmin />,
+          <SiPhp key="php" />,
+          <SiLaravel key="laravel" />,
+          <SiSymfony key="symfony" />,
+          <SiMysql key="mysql" />,
+          <SiPhpmyadmin key="phpmyadmin" />,
         ],
       },
       {
         title: "CMS",
-        icons: [<FaWordpress />, <SiStrapi />, <SiHubspot />, <SiPrestashop />],
+        icons: [
+          <FaWordpress key="wordpress" />,
+          <SiStrapi key="strapi" />,
+          <SiHubspot key="hubspot" />,
+          <SiPrestashop key="prestashop" />,
+        ],
       },
       {
         title: "Dev Tools",
-        icons: [<SiPostman />, <SiVisualstudiocode />, <SiGithub />, <SiNpm />],
+        icons: [
+          <SiPostman key="postman" />,
+          <SiVisualstudiocode key="vscode" />,
+          <SiGithub key="github" />,
+          <SiNpm key="npm" />,
+        ],
       },
       {
         title: "UI/UX Design",
         icons: [
-          <FaFigma />,
-          <SiAdobexd />,
-          <SiAdobephotoshop />,
-          <SiAdobeillustrator />,
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="photoshop" />,
+          <SiAdobeillustrator key="illustrator" />,
         ],
       },
       {
         title: "Marketing",
         icons: [
-          <SiGoogleanalytics />,
-          <SiHubspot />,
-          <SiSemrush />,
-          <SiTrello />,
-          <SiSlack />,
-          <SiCanva />,
-          <SiAircall />,
-          <SiAsana />,
+          <SiGoogleanalytics key="googleanalytics" />,
+          <SiHubspot key="hubspot" />,
+          <SiSemrush key="semrush" />,
+          <SiTrello key="trello" />,
+          <SiSlack key="slack" />,
+          <SiCanva key="canva" />,
+          <SiAircall key="aircall" />,
+          <SiAsana key="asana" />,
         ],
       },
     ],
@@ -199,7 +209,10 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Du webmarketing au développement web, mes compétences n'ont cessé de s'étoffer pour proposer un service de plus en plus complet et personnalisé. L'innovation et la performance sont les maitres mots dans tous mes projets. 
+            Du webmarketing au développement web, mes compétences n&apos;ont
+            cessé de s&apos;étoffer pour proposer un service de plus en plus
+            complet et personnalisé. L&apos;innovation et la performance sont
+            les maitres mots dans tous mes projets.
           </motion.p>
           {/*Counters*/}
           {/* <motion.div
@@ -209,9 +222,9 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           > */}
-            {/* <div className="flex flex-1 xl:gap-x-6 "> */}
-              {/*experience*/}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+          {/* <div className="flex flex-1 xl:gap-x-6 "> */}
+          {/*experience*/}
+          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={33} duration={5} />
                 </div>
@@ -219,8 +232,8 @@ const About = () => {
                   Ans
                 </div>
               </div> */}
-              {/* clients */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+          {/* clients */}
+          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={250} duration={5} /> +
                 </div>
@@ -228,8 +241,8 @@ const About = () => {
                   Satisfied clients
                 </div>
               </div> */}
-              {/* Projects */}
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+          {/* Projects */}
+          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
@@ -237,8 +250,8 @@ const About = () => {
                   Finished projects
                 </div>
               </div> */}
-              {/* Awards */}
-              {/* <div className="relative flex-1">
+          {/* Awards */}
+          {/* <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
@@ -287,7 +300,11 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/*icons*/}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return (
+                        <div key={iconIndex} className="text-2xl text-white">
+                          {icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

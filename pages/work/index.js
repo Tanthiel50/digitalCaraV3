@@ -34,7 +34,9 @@ const Work = () => {
               className="mb4
             max-w-[400px] mx-auto lg:mx-0"
             >
-              Une diversité de projets pour une diversité de sujets. E-commerce, site institutionnel, application, jeu, tout projet se vaut d'être exploré.{" "}
+              Une diversité de projets pour une diversité de sujets. E-commerce,
+              site institutionnel, application, jeu, tout projet se vaut
+              d&apos;être exploré.{" "}
             </motion.p>
           </div>
           {/* slider */}
