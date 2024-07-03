@@ -15,75 +15,133 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiPhp,
+  SiLaravel,
+  SiSymfony,
+  SiMysql,
+  SiTailwindcss,
+  SiGoogleanalytics,
+  SiStrapi,
+  SiHubspot,
+  SiPrestashop,
+  SiSemrush,
+  SiTrello,
+  SiSlack,
+  SiCanva,
+  SiAdobeillustrator,
+  SiAircall,
+  SiAsana,
+  SiPostman,
+  SiVisualstudiocode,
+  SiSass,
+  SiGithub,
+  SiNpm,
 } from "react-icons/si";
 
 //  data
 const aboutData = [
   {
-    title: "skills",
+    title: "Compétences",
     info: [
       {
-        title: "Web Development",
+        title: "Front End",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <SiTailwindcss />,
+          <SiSass />,
         ],
       },
       {
+        title: "Back End",
+        icons: [<SiPhp />, <SiLaravel />, <SiSymfony />, <SiMysql />],
+      },
+      {
+        title: "CMS",
+        icons: [<FaWordpress />, <SiStrapi />, <SiHubspot />, <SiPrestashop />],
+      },
+      {
+        title: "Dev Tools",
+        icons: [<SiPostman />, <SiVisualstudiocode />, <SiGithub />, <SiNpm />],
+      },
+      {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma />,
+          <SiAdobexd />,
+          <SiAdobephotoshop />,
+          <SiAdobeillustrator />,
+        ],
+      },
+      {
+        title: "Marketing",
+        icons: [
+          <SiGoogleanalytics />,
+          <SiHubspot />,
+          <SiSemrush />,
+          <SiTrello />,
+          <SiSlack />,
+          <SiCanva />,
+          <SiAircall />,
+          <SiAsana />,
+        ],
       },
     ],
   },
   {
-    title: "awards",
+    title: "expériences",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Chargée de projet marketing - SEIF",
+        stage: "2021 - 2023",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Customer Success Manager - SEIF",
+        stage: "2020 - 2021",
+      },
+      {
+        title: "Alternance service relation client - Jeanneau",
+        stage: "2018 - 2020",
+      },
+      {
+        title: "Assistante service client bilingue - Jeanneau",
+        stage: "2017 - 2018",
       },
     ],
   },
   {
-    title: "experience",
+    title: "Formations",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Concepteur développeur d'application - Arinfo",
+        stage: "2023 - 2024",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Concepteur développeur d'application - Believemy",
+        stage: "2022 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Bachelor Webmarketing - MyDigitalSchool",
+        stage: "2020 - 2021",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title:
+          "BTS NDRC - Notre Dame du Roc",
+        stage: "2018 - 2020",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Bachelor commerce communication et management - Ecoris",
+        stage: "2012 - 2013",
+      },
+      {
+        title: "Licence de lettres modernes - Université Vauban",
+        stage: "2009 - 2011",
+      },
+      {
+        title: "Bac sciences economiques et sociales - Lycée St Joseph",
+        stage: "2006 - 2009",
       },
     ],
   },
@@ -105,15 +163,15 @@ const About = () => {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/*avatar img*/}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[300px]"
       >
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/*text*/}
         <div className="flex-1 flex flex-col justify-center">
@@ -124,9 +182,9 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating
-            <span className="text-blue"> stories </span>
-            birth magnification designs.
+            Where creativity meets
+            <span className="text-blue"> Digital </span>
+            Precision.
           </motion.h12>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -135,49 +193,46 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 yers ago, I began my journey as a web developer. Since then I've
-            worked on a variety of projects, remote work for agencies, consulted
-            for startyp, and collaborated on digital products for business and
-            consumer use.
+            Du webmarketing au développement web, mes compétences n'ont cessé de s'étoffer pour proposer un service de plus en plus complet et personnalisé. L'innovation et la performance sont les maitres mots dans tous mes projets. 
           </motion.p>
           {/*Counters*/}
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
-            <div className="flex flex-1 xl:gap-x-6 ">
+          > */}
+            {/* <div className="flex flex-1 xl:gap-x-6 "> */}
               {/*experience*/}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={33} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Years of experience
+                  Ans
                 </div>
-              </div>
+              </div> */}
               {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={250} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Satisfied clients
                 </div>
-              </div>
+              </div> */}
               {/* Projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Finished projects
                 </div>
-              </div>
+              </div> */}
               {/* Awards */}
-              <div className="relative flex-1">
+              {/* <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
@@ -186,7 +241,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
         {/*info*/}
         <motion.div
@@ -194,7 +249,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[280px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -212,12 +267,12 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2xl:gap-y-4 items-center xl:items-start">
+          <div className=" py-6 xl:py-6 flex flex-col gap-y-2xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  className="py-2 flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/*title*/}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>

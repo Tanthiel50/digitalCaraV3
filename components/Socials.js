@@ -9,34 +9,42 @@ import {
   RiDribbbleLine,
   RiBehanceLine,
   RiPinterestLine,
+  RiGithubLine,
+  RiLinkedinLine
 } from "react-icons/ri";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      {/* <Link href={""} className=" hover:text-blue transition-all duration-300">
         {" "}
         <RiYoutubeLine />
-      </Link>
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      </Link> */}
+      {/* <Link href={""} className=" hover:text-blue transition-all duration-300">
         {" "}
         <RiInstagramLine />
-      </Link>
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      </Link> */}
+      {/* <Link href={""} className=" hover:text-blue transition-all duration-300">
         {" "}
         <RiFacebookLine />
-      </Link>
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      </Link> */}
+      {/* <Link href={""} className=" hover:text-blue transition-all duration-300">
         {" "}
         <RiDribbbleLine />
-      </Link>
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      </Link> */}
+      <Link
+        href={"https://github.com/Tanthiel50"}
+        className=" hover:text-blue transition-all duration-300"
+      >
         {" "}
-        <RiBehanceLine />
+        <RiGithubLine />
       </Link>
-      <Link href={""} className=" hover:text-blue transition-all duration-300">
+      <Link
+        href={"https://www.linkedin.com/in/c%C3%A9cile-blin-8ab25a72/"}
+        className=" hover:text-blue transition-all duration-300"
+      >
         {" "}
-        <RiPinterestLine />
+        <RiLinkedinLine />
       </Link>
     </div>
   );

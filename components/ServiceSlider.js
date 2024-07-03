@@ -80,9 +80,9 @@ const ServiceSlider = () => {
               <p className="max-w-[350px] leading-normal">{item.description}</p>
             </div>
             {/* arrow */}
-            <div className="text-3xl">
+            {/* <div className="text-3xl">
               <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-blue transition-all duration-300"/>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
         )

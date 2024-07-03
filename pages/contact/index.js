@@ -24,7 +24,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center mb-12"
           >
-            Let's <span className="text-blue ">connect.</span>
+            Let's connect <span className="text-blue ">.</span>
           </motion.h2>
           {/*form */}
           <motion.form
