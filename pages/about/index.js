@@ -36,6 +36,7 @@ import {
   SiSass,
   SiGithub,
   SiNpm,
+  SiPhpmyadmin,
 } from "react-icons/si";
 
 //  data
@@ -56,7 +57,13 @@ const aboutData = [
       },
       {
         title: "Back End",
-        icons: [<SiPhp />, <SiLaravel />, <SiSymfony />, <SiMysql />],
+        icons: [
+          <SiPhp />,
+          <SiLaravel />,
+          <SiSymfony />,
+          <SiMysql />,
+          <SiPhpmyadmin />,
+        ],
       },
       {
         title: "CMS",
@@ -127,8 +134,7 @@ const aboutData = [
         stage: "2020 - 2021",
       },
       {
-        title:
-          "BTS NDRC - Notre Dame du Roc",
+        title: "BTS NDRC - Notre Dame du Roc",
         stage: "2018 - 2020",
       },
       {

@@ -1,3 +1,48 @@
+// icons
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaFigma,
+  FaLaravel,
+  FaTrello,
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop,
+  SiPhp,
+  SiLaravel,
+  SiSymfony,
+  SiMysql,
+  SiTailwindcss,
+  SiGoogleanalytics,
+  SiStrapi,
+  SiHubspot,
+  SiPrestashop,
+  SiSemrush,
+  SiTrello,
+  SiSlack,
+  SiCanva,
+  SiAdobeillustrator,
+  SiAircall,
+  SiAsana,
+  SiPostman,
+  SiVisualstudiocode,
+  SiSass,
+  SiGithub,
+  SiNpm,
+  SiPhpmyadmin,
+  SiMui,
+  SiThreedotjs,
+} from "react-icons/si";
+
+import {TbBrandReactNative} from "react-icons/tb";
+
 // data
 const workSlides = {
   slides: [
@@ -5,74 +50,91 @@ const workSlides = {
       images: [
         {
           title: "Heliconia Caribbea",
-          path: "/thumb1.jpg",
+          path: "/heliconia.jpg",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
+            "Projet e-commerce pour un créateur de bijoux sur mesure. Le défi était de pouvoir réaliser une expérience complete de personnalisation où le client était en mesure de choisir la base de son bijou, la taille de son choix en prenant en compte 11 types de tailles différentes et plusieurs matériaux. Le prix final devait s'ajuster selon le choix du client et le tunnel d'achat devait être géré par Stripe.",
+          tech: [
+            <FaReact />,
+            <FaLaravel />,
+            <FaTrello />,
+            <SiPhp />,
+            <SiTailwindcss />,
+            <SiMysql />,
+            <SiPhpmyadmin />,
+          ],
         },
         {
           title: "Mind Pulse",
-          path: "/thumb2.jpg",
+          path: "/mind.jpg",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
+            "Projet de site vitrine où il fallait être en mesure de rendre le contenu dynamique, d'où l'utilisation de threeJs pour le background et le logo, les rendant ainsi réactifs à la navigation. L'utilisation d'un back end était pour permettre la mise en ligne d'article de blog.",
+          tech: [
+            <FaReact />,
+            <FaLaravel />,
+            <FaTrello />,
+            <SiPhp />,
+            <SiMui />,
+            <SiMysql />,
+            <SiPhpmyadmin />,
+            <SiThreedotjs />,
+          ],
         },
         {
           title: "Weather App",
-          path: "/thumb3.jpg",
+          path: "/weather.jpg",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
-        },
-        {
-          title: "Baldur's Gate",
-          path: "/thumb4.jpg",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "Digital Cara V1",
-          path: "/thumb4.jpg",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
-        },
-        {
-          title: "Tickets website",
-          path: "/thumb1.jpg",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
+            "Projet personnel de création d'application météo afin d'apprendre à utiliser React et réaliser des appels API pour afficher les informations meteo.",
+          tech: [<TbBrandReactNative />],
         },
         {
           title: "Laurentius",
-          path: "/thumb2.jpg",
+          path: "/laurentius.jpg",
           description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
-        },
-        {
-          title: "Hangman Game",
-          path: "/thumb3.jpg",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
-          tech: "React, Next.js, Sass",
-          url: "https://google.com",
+            "Demande de réalisation d'un site portfolio. J'avais carte blanche et par conséquent, j'ai tenté de réaliser le site sans l'aide d'aucun framework. Le site est donc en Vanilla JS.",
+          tech: [
+            <FaHtml5 />,
+            <FaCss3 />,
+            <FaJs />,
+          ],
         },
       ],
     },
+    // {
+    //   images: [
+    //     {
+    //       title: "Digital Cara V1",
+    //       path: "/thumb4.jpg",
+    //       description:
+    //         "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
+    //       tech: "React, Next.js, Sass",
+    //       url: "https://google.com",
+    //     },
+    //     {
+    //       title: "Tickets website",
+    //       path: "/thumb1.jpg",
+    //       description:
+    //         "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
+    //       tech: "React, Next.js, Sass",
+    //       url: "https://google.com",
+    //     },
+    //     {
+    //       title: "Laurentius",
+    //       path: "/thumb2.jpg",
+    //       description:
+    //         "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
+    //       tech: "React, Next.js, Sass",
+    //       url: "https://google.com",
+    //     },
+    //     {
+    //       title: "Hangman Game",
+    //       path: "/thumb3.jpg",
+    //       description:
+    //         "lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, cum aspernatur laborum dolore vel nostrum aperiam repellat, temporibus",
+    //       tech: "React, Next.js, Sass",
+    //       url: "https://google.com",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -91,6 +153,7 @@ import { Pagination } from "swiper";
 
 //icons
 import { BsArrowRight } from "react-icons/bs";
+import { RxCross1 } from "react-icons/rx";
 
 //import image
 import Image from "next/image";
@@ -99,12 +162,11 @@ import Image from "next/image";
 import Modal from "react-modal";
 
 // Définir l'élément racine de l'application pour le modal
-if (typeof window !== 'undefined') {
-  Modal.setAppElement('#__next');
+if (typeof window !== "undefined") {
+  Modal.setAppElement("#__next");
 }
 
 const WorkSlider = () => {
-
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -179,7 +241,7 @@ const WorkSlider = () => {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Image Modal"
-          className="modal bg-primary"
+          className="modal bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative"
           overlayClassName="modal-overlay"
         >
           <div className="modal-content text-center flex flex-col mb-4 xl:mb-0">
@@ -189,21 +251,47 @@ const WorkSlider = () => {
               height={300}
               alt={selectedImage.title}
             />
-            <h2 className="h2 xl:mt-12">{selectedImage.title}</h2>
+            <h2 className="h2 xl:mt-12 text-white">{selectedImage.title}</h2>
+            <div className="">
+              <p className="flex gap-x-4 text-blue text-2xl">
+                {selectedImage.tech}
+              </p>
+            </div>
             <p
               className="mb4
             max-w-[400px] mx-auto lg:mx-0"
             >
               {selectedImage.description}
             </p>
-            <a
-              href={selectedImage.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button>En savoir plus</button>
-            </a>
-            <button onClick={closeModal}>Fermer</button>
+            <div className="flex gap-x-6 w-full justify-center flex-row-reverse">
+              {/* <a
+                href={selectedImage.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-blue group">
+                  <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                    Visiter
+                  </span>
+                  <BsArrowRight
+                    className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]
+              "
+                  />
+                </button>
+              </a> */}
+              <button
+                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                onClick={closeModal}
+              >
+                <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                  Fermer
+                </span>
+                <RxCross1
+                  className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]
+              "
+                />
+              </button>
+            </div>
           </div>
         </Modal>
       )}
