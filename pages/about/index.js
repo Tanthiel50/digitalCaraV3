@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+//import usestate
+import { useState } from "react";
 
 // icons
 import {
@@ -47,62 +48,68 @@ const aboutData = [
       {
         title: "Front End",
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiTailwindcss key="tailwindcss" />,
-          <SiSass key="sass" />,
+          { icon: <FaHtml5 key="html5" />, key: "html5" },
+          { icon: <FaCss3 key="css3" />, key: "css3" },
+          { icon: <FaJs key="js" />, key: "js" },
+          { icon: <FaReact key="react" />, key: "react" },
+          { icon: <SiTailwindcss key="tailwindcss" />, key: "tailwindcss" },
+          { icon: <SiSass key="sass" />, key: "sass" },
         ],
       },
       {
         title: "Back End",
         icons: [
-          <SiPhp key="php" />,
-          <SiLaravel key="laravel" />,
-          <SiSymfony key="symfony" />,
-          <SiMysql key="mysql" />,
-          <SiPhpmyadmin key="phpmyadmin" />,
+          { icon: <SiPhp key="php" />, key: "php" },
+          { icon: <SiLaravel key="laravel" />, key: "laravel" },
+          { icon: <SiSymfony key="symfony" />, key: "symfony" },
+          { icon: <SiMysql key="mysql" />, key: "mysql" },
+          { icon: <SiPhpmyadmin key="phpmyadmin" />, key: "phpmyadmin" },
         ],
       },
       {
         title: "CMS",
         icons: [
-          <FaWordpress key="wordpress" />,
-          <SiStrapi key="strapi" />,
-          <SiHubspot key="hubspot" />,
-          <SiPrestashop key="prestashop" />,
+          { icon: <FaWordpress key="wordpress" />, key: "wordpress" },
+          { icon: <SiStrapi key="strapi" />, key: "strapi" },
+          { icon: <SiHubspot key="hubspot" />, key: "hubspot" },
+          { icon: <SiPrestashop key="prestashop" />, key: "prestashop" },
         ],
       },
       {
         title: "Dev Tools",
         icons: [
-          <SiPostman key="postman" />,
-          <SiVisualstudiocode key="vscode" />,
-          <SiGithub key="github" />,
-          <SiNpm key="npm" />,
+          { icon: <SiPostman key="postman" />, key: "postman" },
+          { icon: <SiVisualstudiocode key="vscode" />, key: "vscode" },
+          { icon: <SiGithub key="github" />, key: "github" },
+          { icon: <SiNpm key="npm" />, key: "npm" },
         ],
       },
       {
         title: "UI/UX Design",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="photoshop" />,
-          <SiAdobeillustrator key="illustrator" />,
+          { icon: <FaFigma key="figma" />, key: "figma" },
+          { icon: <SiAdobexd key="adobexd" />, key: "adobexd" },
+          { icon: <SiAdobephotoshop key="photoshop" />, key: "photoshop" },
+          {
+            icon: <SiAdobeillustrator key="illustrator" />,
+            key: "illustrator",
+          },
         ],
       },
       {
         title: "Marketing",
         icons: [
-          <SiGoogleanalytics key="googleanalytics" />,
-          <SiHubspot key="hubspot" />,
-          <SiSemrush key="semrush" />,
-          <SiTrello key="trello" />,
-          <SiSlack key="slack" />,
-          <SiCanva key="canva" />,
-          <SiAircall key="aircall" />,
-          <SiAsana key="asana" />,
+          {
+            icon: <SiGoogleanalytics key="googleanalytics" />,
+            key: "googleanalytics",
+          },
+          { icon: <SiHubspot key="hubspot" />, key: "hubspot" },
+          { icon: <SiSemrush key="semrush" />, key: "semrush" },
+          { icon: <SiTrello key="trello" />, key: "trello" },
+          { icon: <SiSlack key="slack" />, key: "slack" },
+          { icon: <SiCanva key="canva" />, key: "canva" },
+          { icon: <SiAircall key="aircall" />, key: "aircall" },
+          { icon: <SiAsana key="asana" />, key: "asana" },
         ],
       },
     ],
@@ -132,11 +139,11 @@ const aboutData = [
     title: "Formations",
     info: [
       {
-        title: "Concepteur développeur d'application - Arinfo",
+        title: "Concepteur développeur d&apos;application - Arinfo",
         stage: "2023 - 2024",
       },
       {
-        title: "Concepteur développeur d'application - Believemy",
+        title: "Concepteur développeur d&apos;application - Believemy",
         stage: "2022 - 2023",
       },
       {
@@ -174,22 +181,10 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
-      {/*avatar img*/}
-      {/* <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[300px]"
-      >
-        <Avatar />
-      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        {/*text*/}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h12
             variants={fadeIn("right", 0.2)}
@@ -214,55 +209,7 @@ const About = () => {
             complet et personnalisé. L&apos;innovation et la performance sont
             les maitres mots dans tous mes projets.
           </motion.p>
-          {/*Counters*/}
-          {/* <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          > */}
-          {/* <div className="flex flex-1 xl:gap-x-6 "> */}
-          {/*experience*/}
-          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
-                  <CountUp start={0} end={33} duration={5} />
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Ans
-                </div>
-              </div> */}
-          {/* clients */}
-          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Satisfied clients
-                </div>
-              </div> */}
-          {/* Projects */}
-          {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Finished projects
-                </div>
-              </div> */}
-          {/* Awards */}
-          {/* <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-blue mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Winning awards
-                </div>
-              </div>
-            </div>
-          </motion.div> */}
         </div>
-        {/*info*/}
         <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
@@ -286,20 +233,18 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-6 xl:py-6 flex flex-col gap-y-2xl:gap-y-4 items-center xl:items-start">
+          <div className="py-6 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className="py-2 flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  {/*title*/}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {/*icons*/}
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons?.map((icon, iconIndex) => {
                       return (
                         <div key={iconIndex} className="text-2xl text-white">
                           {icon}
