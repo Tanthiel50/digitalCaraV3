@@ -182,7 +182,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left overflow-auto">
       <Circles />
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
@@ -215,7 +215,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[280px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[280px] overflow-auto"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -246,8 +246,8 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {item.icons?.map(({ icon, key }) => (
                       <div key={key} className="text-2xl text-white">
-                      {icon}
-                    </div>
+                        {icon}
+                      </div>
                     ))}
                   </div>
                 </div>

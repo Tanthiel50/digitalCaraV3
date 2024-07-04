@@ -24,9 +24,9 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 hidden xl:display  xl:block"
           >
-            <span className="text-blue">Shaping the future</span> <br />
+            <span className="text-blue  ">Shaping the future</span> <br />
             One pixel at a time
           </motion.h1>
           {/*subtitle*/}
@@ -35,7 +35,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm mt-10 md:mt-0 xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             Spécialisée dans le développement web, la conception créative et
             l&apos;accompagnement marketing, je suis en mesure de combiner
